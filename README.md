@@ -1,12 +1,12 @@
-# pasta
+# `pasta`
 
-Just specify pastebin service of choice as your first argument and
-file to share as the second. Otherwise you can send standard input
-without specifying input file.
+Just specify the pastebin service of choice as your first argument
+and a file to share as the second. Otherwise you can send standard
+input without specifying any file.
 
-You can change user agent used by curl by changing the `PASTA_UA`
+You can change user agent used by `curl` by changing the `PASTA_UA`
 variable.
 
-Also `pasta` keeps a log of links in file difined by `PASTA_LOG`.
-You can change it to your liking or disable it by setting the
-variable to `/dev/null`.
+Also `pasta` keeps history in a `~/.pasta_history`. Change it by
+setting `PASTA_LOG` to something else. Or disable it by setting it
+to `/dev/null`.
