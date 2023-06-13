@@ -12,7 +12,7 @@ location by setting `PASTA_LOG` to something else. Or disable history
 by setting `PASTA_LOG` to `/dev/null`.
 
 If you don't want to download this script you can put the
-following function in your `.profile`:
+following function in your `$SHELL`'s config:
 
 ```bash
 pasta() {
