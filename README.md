@@ -1,6 +1,6 @@
 # `pasta`
 
-```
+```bash
 pasta() {
   curl https://raw.githubusercontent.com/yurystarkov/pasta/main/pasta | sh /dev/stdin <service> [file]
 }
