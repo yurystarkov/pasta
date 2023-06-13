@@ -1,5 +1,11 @@
 # `pasta`
 
+```
+pasta() {
+  curl https://raw.githubusercontent.com/yurystarkov/pasta/main/pasta | sh /dev/stdin <service> [file]
+}
+```
+
 Just specify the pastebin service of choice as your first argument
 and a file to share as the second. Or you can send standard input
 without specifying any file.
