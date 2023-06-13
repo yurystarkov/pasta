@@ -1,10 +1,4 @@
-# `pasta`
-
-```bash
-pasta() {
-  curl https://raw.githubusercontent.com/yurystarkov/pasta/main/pasta | sh /dev/stdin <service> [file]
-}
-```
+# pasta
 
 Just specify the pastebin service of choice as your first argument
 and a file to share as the second. Or you can send standard input
@@ -16,6 +10,16 @@ variable.
 Also `pasta` keeps history in a `~/.pasta_history`. Change the file
 location by setting `PASTA_LOG` to something else. Or disable history
 by setting `PASTA_LOG` to `/dev/null`.
+
+If you don't want to download this script you can put the
+following function somewhere in your `.profile`:
+
+```bash
+pasta() {
+  curl https://raw.githubusercontent.com/yurystarkov/pasta/main/pasta |
+    sh /dev/stdin "$1" "$2"
+}
+```
 
 Currently supported services:
 
